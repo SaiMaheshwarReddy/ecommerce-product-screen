@@ -1,4 +1,4 @@
-import { Flex, Box, Image } from "@chakra-ui/react";
+import { Flex, Box} from "@chakra-ui/react";
 import React, { useState } from "react";
 
 const ImageCarouselContainer = ({ setProductImage, productImages }) => {
