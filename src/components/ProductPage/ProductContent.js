@@ -27,8 +27,8 @@ const ProductContent = () => {
     };
     cart.setCartCount(cartCount);
     if (cartCount > 0) {
-      const cartItems = [...cart.cartItem];
-      cartItems.push(cartItemInfo);
+      const cartItems = [cartItemInfo];
+      // cartItems.push(cartItemInfo);
       cart.setCartItem(cartItems);
     }
   };

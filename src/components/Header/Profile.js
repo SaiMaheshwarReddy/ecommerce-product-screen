@@ -7,7 +7,7 @@ import closeIcon from "../../images/icon-close.svg";
 import deleteIcon from "../../images/icon-delete.svg";
 const Profile = () => {
   const cart = useContext(CartContext);
-  const [cartOpen, setCartOpen] = useState(false)
+  const [cartOpen, setCartOpen] = useState(false);
   return (
     <>
       <Box
@@ -18,7 +18,7 @@ const Profile = () => {
         // border="1px solid black"
         borderRadius="3px"
         zIndex="5"
-        top={["3rem", "3.6rem", "4.7rem"]}
+        top={["3.2rem", "3.6rem", "4.7rem"]}
         right="0.5rem"
         m="auto"
         px="1rem"
@@ -33,15 +33,14 @@ const Profile = () => {
           width="100%"
           boxShadow="0px 2.5px 0px #E8E7EC"
         >
-          <Text fontWeight="bold" fontSize="0.9rem">
+          <Text fontWeight="bold" fontSize="1.1rem">
             Cart
           </Text>
           <Box as="button" onClick={() => setCartOpen(false)}>
-
-          <Image src={closeIcon}  width="10px" />
+            <Image src={closeIcon} width="16px" />
           </Box>
         </Flex>
-        {cart.cartItem.length > 0 ?
+        {cart.cartItem.length > 0 ? (
           cart.cartItem.map((item) => {
             const { title } = item;
             const newTitle =
@@ -49,7 +48,7 @@ const Profile = () => {
             return (
               <Flex
                 mx="0.6rem"
-                py="1.4rem"
+                py="1rem"
                 justifyContent="center"
                 alignItems="center"
               >
@@ -78,14 +77,40 @@ const Profile = () => {
                     >
                       {item.quantity}
                     </Text>
-                    <Text as="span" fontSize="0.9rem" ml="0.4rem" fontWeight="bold">${(item.price * item.quantity).toFixed(2)}</Text>
+                    <Text
+                      as="span"
+                      fontSize="0.9rem"
+                      ml="0.4rem"
+                      fontWeight="bold"
+                    >
+                      ${(item.price * item.quantity).toFixed(2)}
+                    </Text>
                   </Box>
                 </Box>
                 <Image src={deleteIcon} width="0.8rem" ml="1.4rem" />
               </Flex>
             );
-          }) : <Flex alignItems="center" minHeight="8rem" justifyContent="center"><Text as="div" width="100%" height="100%" textAlign="center">Your cart is empty.</Text></Flex>
-          }
+          })
+        ) : (
+          <Flex alignItems="center" minHeight="8rem" justifyContent="center">
+            <Text as="div" width="100%" height="100%" textAlign="center">
+              Your cart is empty.
+            </Text>
+          </Flex>
+        )}
+        <Box
+          as="button"
+          width="100%"
+          borderRadius="10px"
+          _hover={{ backgroundColor: "rgba(255, 125, 27, 0.754)" }}
+          color="white.100"
+          py="0.4rem"
+          mt="0.8rem"
+          bg="brand.100"
+          fontWeight="bold"
+        >
+          Checkout
+        </Box>
       </Box>
       <Flex justifyContent="center" alignItems="center" mr="0.5rem">
         <Box
@@ -93,7 +118,11 @@ const Profile = () => {
           onClick={() => setCartOpen(!cartOpen)}
           position="relative"
         >
-          <Image src={cartIcon} mr={["1.8rem", "2.3rem"]} width={["18px", "20px"]} />
+          <Image
+            src={cartIcon}
+            mr={["1.8rem", "2.3rem"]}
+            width={["18px", "20px"]}
+          />
           <Text
             bg="brand.100"
             color="white"
@@ -112,10 +141,10 @@ const Profile = () => {
           </Text>
         </Box>
         <Box
-          borderRadius="50%"
+          borderRadius="50px"
           cursor="pointer"
           _hover={{ outline: "3px solid hsl(26, 100%, 55%)" }}
-          width={["28px", "36px"]}
+          width={["30px", "36px"]}
         >
           <Image src={profileAvatar} width="100%" />
         </Box>
