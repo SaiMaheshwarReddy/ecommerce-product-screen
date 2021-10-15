@@ -39,20 +39,20 @@ const ProductContent = () => {
         color="brand.100"
         fontWeight="bold"
         letterSpacing="2px"
-        fontSize={["0.75rem", "1rem", "1.3rem", "1.1rem"]}
+        fontSize={["0.9rem", "1rem", "1.3rem", "1.1rem"]}
       >
         SNEAKER COMPANY
       </Text>
       <Heading
-        mt={["0.7rem", "0.8rem", "1rem", "1.6rem", "1.4rem"]}
-        fontSize={["1.7rem", "2rem", "2.5rem"]}
+        mt={["0.8rem", "0.9rem", "1.1rem", "1.6rem", "1.4rem"]}
+        fontSize={["2rem", "2rem", "2.5rem"]}
       >
         Fall Limited Edition <br /> Sneakers
       </Heading>
       <Text
-        mt={["0.7rem", "0.8rem", "1.2rem", "2.6rem", "2rem"]}
+        mt={["0.8rem", "0.9rem", "1.2rem", "2.6rem", "2rem"]}
         color="blue.200"
-        fontSize={["0.8rem", "1.3rem"]}
+        fontSize={["1.2rem", "1.3rem"]}
       >
         These low-profile sneakers are your perfect casual wear companion.
         Featuring a durable rubber outer sole, they'll withstand everything the
@@ -62,9 +62,9 @@ const ProductContent = () => {
       <Flex
         justifyContent="flex-start"
         alignItems="center"
-        mt={["0.7rem", "1.4rem", "1.8rem", " 2.4rem", "2.4rem"]}
+        mt={["0.8rem", "1.4rem", "1.8rem", " 2.4rem", "2.4rem"]}
       >
-        <Text fontWeight="bold" fontSize={["1.5rem", "1.7rem", "1.8rem", "1.6rem"]}>
+        <Text fontWeight="bold" fontSize={["1.6rem", "1.7rem", "1.8rem", "1.6rem"]}>
           $125.00
         </Text>
         <Box
@@ -72,7 +72,7 @@ const ProductContent = () => {
           ml="1.3rem"
           color="brand.100"
           fontWeight="bold"
-          fontSize={["0.8rem", "1rem", "1.2rem", "1rem"]}
+          fontSize={["1rem", "1rem", "1.2rem", "1rem"]}
           display="inline-block"
           bg="brand.900"
           borderRadius="5px"
@@ -81,7 +81,7 @@ const ProductContent = () => {
           50%
         </Box>
       </Flex>
-      <Text as="s" fontWeight="bold" fontSize="0.95rem" color="blue.300">
+      <Text as="s" fontWeight="bold" fontSize="1rem" color="blue.300">
         $250.00
       </Text>
       <Flex
@@ -95,17 +95,17 @@ const ProductContent = () => {
           bg="blue.400"
           width={["100%", "80%", "200px","200px"]}
           borderRadius="10px"
-          py="0.9rem"
+          py="1rem"
           px="1rem"
           justifyContent="space-between"
           alignItems="center"
         >
           <Box as="button"  _hover={{transform: "scale(1.4)", transition: "all 0.4s ease-out"}} onClick={() => handleDecrementCount()}>
-            <Image src={minusIcon} width={["12px"]} />
+            <Image src={minusIcon} width={["14px"]} />
           </Box>
           <Text fontWeight="bold">{cartCount}</Text>
           <Box as="button"  _hover={{transform: "scale(1.4)",transition: "all 0.4s ease-out"}} onClick={() => handleIncrementCount()}>
-            <Image src={plusIcon} width={["12px"]} />
+            <Image src={plusIcon} width={["14px"]} />
           </Box>
         </Flex>
         <Flex
@@ -113,7 +113,7 @@ const ProductContent = () => {
           onClick={() => handleAddCart()}
           ml={["0", "0", "1.2rem"]}
           justifyContent="center"
-          mt={["1rem", "1rem", "0", "0rem"]}
+          mt={["1.2rem", "1.2rem", "0", "0rem"]}
           boxShadow="0px 7px 19px #FED2AF"
           alignItems="center"
           fontWeight="bold"
@@ -122,11 +122,11 @@ const ProductContent = () => {
           borderRadius="10px"
           _hover={{backgroundColor: "rgba(255, 125, 27, 0.754)"}}
           color="white.100"
-          py="0.9rem"
+          py="1rem"
           bg="brand.100"
         >
-          <Image src={cartIcon} width={["18px", "20px"]} />
-          <Text ml={["0.8rem", "0.9rem", "1rem"]} fontSize={["0.9rem", "1rem"]}>
+          <Image src={cartIcon} width={["20px", "22px"]} />
+          <Text ml={["0.8rem", "0.9rem", "1rem"]} fontSize={["1.1rem", "1.2rem"]}>
             Add to cart
           </Text>
         </Flex>

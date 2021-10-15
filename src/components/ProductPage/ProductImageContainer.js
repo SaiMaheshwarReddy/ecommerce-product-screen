@@ -109,11 +109,11 @@ const ProductImageContainer = () => {
           </>
         ))}
       {/* </Flex> */}
-    <Flex as="button" onClick={() => handleNext()} justifyContent="center" alignItems="center" width="26px" height="26px" position="absolute" transform="translateY(-50%)" borderRadius="50%" bg="white" mr="0.4rem" right="0px" top="50%" >
-    <Image src={nextIcon} width="6px" />
+    <Flex as="button" onClick={() => handleNext()} justifyContent="center" alignItems="center" width="35px" height="35px" position="absolute" transform="translateY(-50%)" borderRadius="50%" bg="white" mr="0.4rem" right="0px" top="50%" >
+    <Image src={nextIcon} width="8px" />
     </Flex>
-    <Flex as="button" onClick={handlePrev} justifyContent="center" alignItems="center" width="26px" height="26px" position="absolute" transform="translateY(-50%)" borderRadius="50%" bg="white" ml="0.4rem" left="0px" top="50%" >
-    <Image src={previousIcon} width="6px" />
+    <Flex as="button" onClick={handlePrev} justifyContent="center" alignItems="center" width="35px" height="35px" position="absolute" transform="translateY(-50%)" borderRadius="50%" bg="white" ml="0.4rem" left="0px" top="50%" >
+    <Image src={previousIcon} width="8px" />
     </Flex>
     </Box>
   );

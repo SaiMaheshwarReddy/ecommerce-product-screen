@@ -93,7 +93,7 @@ const Profile = () => {
           onClick={() => setCartOpen(!cartOpen)}
           position="relative"
         >
-          <Image src={cartIcon} mr={["1.6rem", "2.3rem"]} width={["16px", "20px"]} />
+          <Image src={cartIcon} mr={["1.8rem", "2.3rem"]} width={["18px", "20px"]} />
           <Text
             bg="brand.100"
             color="white"
@@ -115,7 +115,7 @@ const Profile = () => {
           borderRadius="50%"
           cursor="pointer"
           _hover={{ outline: "3px solid hsl(26, 100%, 55%)" }}
-          width={["26px", "36px"]}
+          width={["28px", "36px"]}
         >
           <Image src={profileAvatar} width="100%" />
         </Box>
