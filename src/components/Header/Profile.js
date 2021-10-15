@@ -13,7 +13,7 @@ const Profile = () => {
       <Box
         position="absolute"
         minWidth="18rem"
-        minHeight="13rem"
+        minHeight={cart.cartItem.length > 0 ? "13rem" : "10rem"}
         bg="white"
         // border="1px solid black"
         borderRadius="3px"
@@ -41,7 +41,8 @@ const Profile = () => {
           </Box>
         </Flex>
         {cart.cartItem.length > 0 ? (
-          cart.cartItem.map((item) => {
+          <>
+          {cart.cartItem.map((item) => {
             const { title } = item;
             const newTitle =
               title.length > 25 ? title.slice(0, 24) + "..." : title;
@@ -91,13 +92,7 @@ const Profile = () => {
               </Flex>
             );
           })
-        ) : (
-          <Flex alignItems="center" minHeight="8rem" justifyContent="center">
-            <Text as="div" width="100%" height="100%" textAlign="center">
-              Your cart is empty.
-            </Text>
-          </Flex>
-        )}
+          }
         <Box
           as="button"
           width="100%"
@@ -111,6 +106,14 @@ const Profile = () => {
         >
           Checkout
         </Box>
+        </>
+        ) : (
+          <Flex alignItems="center" minHeight="8rem" justifyContent="center">
+            <Text as="div" width="100%" height="100%" textAlign="center">
+              Your cart is empty.
+            </Text>
+          </Flex>
+        )}
       </Box>
       <Flex justifyContent="center" alignItems="center" mr="0.5rem">
         <Box
