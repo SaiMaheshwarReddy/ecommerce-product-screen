@@ -68,3 +68,24 @@ border-bottom: 4px solid hsl(26, 100%, 55%);
 color: black;
 transition: all 0.1s ease-out;
  }
+
+ .cartButton:hover {
+  background-color: rgba(255, 125, 27, 0.754);
+  /* font-size: 4.4rem; */
+}
+
+.cartButton:hover .cartBtnText {
+   transform: translateX(10px);
+   transition: all 0.4s ease-in-out;
+
+ }
+
+ .cartButton:hover .iconRight{
+  font-size: 1.28rem;
+   transition: all 0.4s ease-in-out;
+   transform: translateX(16px);
+ }
+ /* .iconRight:hover {
+   font-size: 1.8rem;
+   transition: all 0.4s ease-in-out;
+ } */

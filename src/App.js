@@ -11,11 +11,13 @@ function App() {
  
 
   const [cartCount, setCartCount] = useState(0)
+  const [cartOpen, setCartOpen] = useState(false);
 
   const [cartItem, setCartItem] = useState([])
+  const [addCartBtnStatus, setAddCartBtnStatus] = useState(true);
 
   return (
-    <CartContext.Provider value={{cartCount, setCartCount, cartItem, setCartItem}}>
+    <CartContext.Provider value={{cartCount, setCartCount, cartItem, setCartItem, cartOpen, setCartOpen, addCartBtnStatus, setAddCartBtnStatus}}>
     <Box width="100%">
     <Flex direction="column" width="100%" justifyContent="center" alignItems="center">
       <Header />

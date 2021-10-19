@@ -7,7 +7,15 @@ import closeIcon from "../../images/icon-close.svg";
 import deleteIcon from "../../images/icon-delete.svg";
 const Profile = () => {
   const cart = useContext(CartContext);
-  const [cartOpen, setCartOpen] = useState(false);
+ const {cartOpen, setCartOpen, setAddCartBtnStatus} = cart
+
+ const handleDelete = (item) => {
+   const filteredCart = cart.cartItem.filter((i) => {
+     return i.title !== item.title
+   })
+   cart.setCartItem(filteredCart)
+   setAddCartBtnStatus(true)
+ }
   return (
     <>
       <Box
@@ -88,7 +96,9 @@ const Profile = () => {
                     </Text>
                   </Box>
                 </Box>
+                <Box as="button" onClick={() => handleDelete(item)}>
                 <Image src={deleteIcon} width="0.8rem" ml="1.4rem" />
+                </Box>
               </Flex>
             );
           })

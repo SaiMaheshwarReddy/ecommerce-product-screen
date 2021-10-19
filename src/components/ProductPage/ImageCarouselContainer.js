@@ -12,11 +12,12 @@ const ImageCarouselContainer = ({ setProductImage, productImages }) => {
     setActiveThumb(img.productThumbnail);
   };
   return (
-    <Box width={["100%", "100%", "100%", "90%", "80%"]} overflowX={["scroll", "scroll", "scroll", "scroll", "hidden"]} className="hideScroll" mt={["0.8rem","0.8rem", "1rem" ,"1.7rem"]}>
+    <Box width={["100%", "100%", "100%", "90%", "max-content"]} overflowX={["scroll", "scroll", "scroll", "scroll", "hidden"]} className="hideScroll" mt={["0.8rem","0.8rem", "1rem" ,"1.7rem"]}>
     <Flex
    py={["0.5rem", "0.5rem","0.5rem", "0.5rem"]}
       justifyContent="flex-start"
       alignItems="center"
+      alignSelf={null, null, null, null, "flex-start"}
       width={["max-content", "max-content","max-content", "max-content" ]}
     className="hideScroll"
     >
