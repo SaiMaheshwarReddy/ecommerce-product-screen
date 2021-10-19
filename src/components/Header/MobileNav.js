@@ -31,7 +31,7 @@ const MobileNav = ({ navOpen, setNavOpen }) => {
         fontSize={["0.85rem", "1.1rem"]}
         fontWeight="bold"
       >
-        <Box as="li" mx="0.9rem"  bg="blue.400" mt="0.6rem">
+        <Box as="li" mx="0.9rem" mt="0.6rem">
           <Box href="#" as="a">
             Collections
           </Box>
