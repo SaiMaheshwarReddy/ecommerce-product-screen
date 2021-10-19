@@ -1,5 +1,5 @@
 import { Flex, Image, Box, Text } from "@chakra-ui/react";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../../Context";
 import cartIcon from "../../images/icon-cart-black.svg";
 import profileAvatar from "../../images/image-avatar.png";

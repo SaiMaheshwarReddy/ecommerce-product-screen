@@ -8,7 +8,7 @@ import productThumbnail from "../../images/image-product-1-thumbnail.jpg";
 
 const ProductContent = () => {
   const cart = useContext(CartContext);
-  const { cartOpen, setCartOpen,addCartBtnStatus, setAddCartBtnStatus } = cart;
+  const { setCartOpen,addCartBtnStatus, setAddCartBtnStatus } = cart;
   const [cartCount, setCartCount] = useState(1);
 
   const handleDecrementCount = () => {

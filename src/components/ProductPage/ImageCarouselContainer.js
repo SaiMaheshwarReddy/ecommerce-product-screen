@@ -17,7 +17,7 @@ const ImageCarouselContainer = ({ setProductImage, productImages }) => {
    py={["0.5rem", "0.5rem","0.5rem", "0.5rem"]}
       justifyContent="flex-start"
       alignItems="center"
-      alignSelf={null, null, null, null, "flex-start"}
+      alignSelf={[null, null, null, null, "flex-start"]}
       width={["max-content", "max-content","max-content", "max-content" ]}
     className="hideScroll"
     >
